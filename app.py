@@ -132,7 +132,7 @@ def main():
         test = xgb.DMatrix(test.values)
 
 
-        model = xgb.Booster(model_file='model.json')
+        model = xgb.Booster(model_file='model.model')
 
         y_pred = model.predict(test)
 
